@@ -1,5 +1,5 @@
 // C 프로그래밍 - https://codereading101.github.io/C/
-// 파일명 - https://github.com/CodeReading101/C/blob/main/Chapter01/LittleStar.c
+// 소스파일 - https://github.com/CodeReading101/C/blob/main/Chapter01/LittleStar.c
 
 #include <stdio.h> 					
 #include <unistd.h>
