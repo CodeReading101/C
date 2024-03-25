@@ -27,7 +27,7 @@ int main() {
 			break;
 		case 's': case 'S': 
 			printf("\033[1;1f              \n");
-			printf("   Sucess!!   \n");
+			printf("   Success!!   \n");
 			printf("              ");
 			break;
 		case 'd': case 'D': 
