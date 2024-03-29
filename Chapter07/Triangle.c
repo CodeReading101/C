@@ -7,6 +7,7 @@
 int main() {
 	// 변수 초기화
 	int size = 0, line = 0, blank = 0, star = 0;		
+
 	// 사용자에게 삼각형의 크기를 입력 받기 
 	printf("삼각형 크기를 입력하세요 : ");
 	scanf("%d", &size );
@@ -21,7 +22,6 @@ int main() {
 		for ( star = 2*line-1; star > 0; star -- ) {
 			printf("*");
 		}
-
 		// 끝에 빈줄을 출력 
 		printf("\n");
 	}
