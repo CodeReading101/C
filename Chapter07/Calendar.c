@@ -28,7 +28,6 @@ int main() {
 	for ( day = 1; day <= lastDay; day++, dayOfWeek++ ) {
 		// 일주일을 한줄에 출력 
 		printf( "%5d", day );	
-								
 		// 즉, 토요일 후 일요일은 새 줄에서 시작 
 		if ( dayOfWeek == saturday ) {
 			printf( "\n");
