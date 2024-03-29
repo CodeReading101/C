@@ -25,21 +25,21 @@ int main() {
 		printf("\033[%d;%df  ",row,column);
 		switch( direction ) {
 			// W는 위로 이동 
-		case 'w': case 'W': 
-			row = ( row <= 2 ) ? 2 : row-1;
-			break;
+			case 'w': case 'W': 
+				row = ( row <= 2 ) ? 2 : row-1;
+				break;
 			// A는 왼쪽으로 이동 
-		case 'a': case 'A': 
-			column = ( column <= 2 ) ? 2 : column-1;
-			break;
+			case 'a': case 'A': 
+				column = ( column <= 2 ) ? 2 : column-1;
+				break;
 			// S는 아래로 이동 
-		case 's': case 'S': 
-			row = ( row >= 8 ) ? 8 : row+1;
-			break;
+			case 's': case 'S': 
+				row = ( row >= 8 ) ? 8 : row+1;
+				break;
 			// D는 오른쪽으로 이동 
-		case 'd': case 'D': 
-			column = ( column >= 15 ) ? 15 : column+1;
-			break;
+			case 'd': case 'D': 
+				column = ( column >= 15 ) ? 15 : column+1;
+				break;
 		}
 		printf("\033[%d;%df옷",row,column);
 
