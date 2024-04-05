@@ -6,20 +6,20 @@
 
 // 프로그램시작
 int main() {
-	char word[3][32] = { "", "", "" };
+	char word[5][32] = { "", "", "", "", "" };
 	char temp[32] = "";
 	int index = 0;
 	int last = 0;
 
 	// 단어들 입력
-	for( index = 0; index < 3; index++ )
+	for( index = 0; index < 5; index++ )
 	{
 		printf( "단어를 입력하세요: " );
 		scanf( "%s", word[index] );
 	}
 	// 단어 정렬
 	// 영역의 마지막 칸에 가장 큰 값을 저장하면서, 영역을 한 칸씩 앞으로 좁혀가기
-	for ( last = 2; last >= 0; last-- )
+	for ( last = 4; last >= 0; last-- )
 	{
 		// 영역의 첫번째 칸부터 인접한 두 값을 비교하면서
 		for ( index = 0; index < last; index++ )
@@ -35,7 +35,7 @@ int main() {
 	}
 
 	// 정렬된 단어 출력
-	for ( index = 0; index < 3; index++ )
+	for ( index = 0; index < 5; index++ )
 	{
 		printf( "%d) %s ", index + 1, word[index] );
 	}
