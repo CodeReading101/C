@@ -5,38 +5,21 @@
 
 // 프로그램시작
 int main() {
-	char month[1024] = "";
-	char day[1024] = "";
-	char week[1024] = "";
-	char weatherReport[1024] = "";
-	char precaution[1024] = "";
-	int  lowSeoul = 0;
-	int  lowChuncheon = 0;
-	int  lowDaejeon = 0;
-	int  lowGwangju = 0;
-	int  lowBusan = 0;
-	int  lowJeju = 0;
-	int  highSeoul = 0;
-	int  highChuncheon = 0;
-	int  highDaejeon = 0;
-	int  highGwangju = 0;
-	int  highBusan = 0;
-	int  highJeju = 0;
-
-	char filename[1024] = "";
-	char line[1024] = "";
+	char month[1024]="", day[1024]="", week[1024]="", weatherReport[1024]="", precaution[1024]="";
+	int  lowSeoul =0, lowChuncheon =0, lowDaejeon =0, lowGwangju =0, lowBusan =0, lowJeju =0;
+	int  highSeoul=0, highChuncheon=0, highDaejeon=0, highGwangju=0, highBusan=0, highJeju=0;
+	char filename[1024] = "", line[1024] = "";
 	FILE *inFile = NULL;
 
-	// 파일 열기
+	// 날씨 정보 파일 열기
 	printf( "파일이름을 입력해 주세요 : " );
 	scanf( "%s", filename );
 	if ( ( inFile = fopen( filename, "rt" ) ) == NULL ) {
 		printf( "[오류] 파일을 열 수 없습니다!" );
 		return -1;
 	}
-	// 파일에서 날짜별 날씨 정보를 읽어오기
+	// 파일에서 날짜별 날씨 정보를 추출하기
 	while ( fgets( line, 1024, inFile ) != NULL ) {
-		// 날짜, 기상특보, 최저기온, 최고기온 등 주요 날씨 정보를 추출
 		if( sscanf( line, "%s %s %s\t%s\t%s\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
 			month, day, week, weatherReport, precaution,
 			&lowSeoul, &lowChuncheon, &lowDaejeon, 	&lowGwangju, &lowBusan, &lowJeju,
@@ -54,7 +37,7 @@ int main() {
 			  weatherReport, precaution );
 		printf("\n이상 날씨였습니다.\n웨더봇 기자" );
 	}
-	// 파일 닫기
+	// 날씨 정보 파일 닫기
 	fclose( inFile );
 
 	// 프로그램 종료

@@ -12,8 +12,7 @@ void getUppercase( char *uppercase, char *lowercase ) {
 
 // 프로그램 시작
 int main() {
-	char lowercase[10] = { '\0' };
-	char uppercase[10] = { '\0' };
+	char lowercase[10] = { '\0' }, uppercase[10] = { '\0' };
 
 	// 알파벳 소문자 단어를 입력받기
 	printf("알파벳 소문자 단어를 입력하세요: " );

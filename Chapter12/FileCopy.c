@@ -6,10 +6,8 @@
 // 프로그램시작
 int main() {
 	char line[1024] = "";
-
+	FILE *inFile = NULL, *outFile = NULL;
 	// 파일 열기
-	FILE *inFile = NULL;
-	FILE *outFile = NULL;
 	if (((inFile=fopen("original.txt","rt"))==NULL )||((outFile=fopen("copy.txt","wt"))==NULL)) {
 		printf( "[오류] 파일을 열 수 없습니다!" );
 		return -1;

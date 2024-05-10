@@ -6,11 +6,10 @@
 
 // 프로그램시작
 int main() {
-	char word[1024] = "";
-	char meaning[1024] = "";
+	char word[1024] = "", meaning[1024] = "";
 	FILE *dictionary = NULL;
 
-	// 영어 단어를 입력
+	// 먼저 영어 단어를 입력
 	printf( "영어단어를 입력하세요 : " );
 	scanf( "%s", word );
 	// 영한 사전을 열기

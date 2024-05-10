@@ -31,8 +31,7 @@ int DoesPlayerAWin( char *playerA, char *playerB ) {
 
 // 프로그램 시작
 int main() {
-	char playerA[10] = "";
-	char playerB[10] = "";
+	char playerA[10] = "", playerB[10] = "";
 
 	// A양 가위바위보 입력
 	printf( "A양, " );

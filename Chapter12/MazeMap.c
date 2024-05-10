@@ -18,6 +18,9 @@ void printMap() {
 			// 셋째 Exit이면 문 출력
 			else if( map[row][column] == 'E' )
 				printf("\033[34m문\033[0m");
+			// 넷째 Actor이면 옷 출력
+			else if( map[row][column] == 'A' )
+				printf("\033[31m옷\033[0m");
 		}
 		printf("\n");
 	}
@@ -26,12 +29,11 @@ void printMap() {
 
 // 프로그램시작
 int main() {
-	// 맵 읽기
-	// 맵 파일 열기
 	char filename[64] = "";
 	FILE *inFile = NULL;
 
-	// 파일 열기
+	// 파일에서 맵 추출하기
+	// 맵 파일 열기
 	printf( "파일이름을 입력해 주세요 : " );
 	scanf( "%s", filename );
 	if ( ( inFile = fopen( filename, "rt" ) ) == NULL ) {
@@ -45,7 +47,7 @@ int main() {
 	// 맵 파일 닫기
 	fclose( inFile );
 
-	// 맵 출력
+	// 추출한 맵 출력
 	printMap();
 
 	// 프로그램 종료
