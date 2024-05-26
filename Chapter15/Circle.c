@@ -19,7 +19,7 @@ int main() {
 	circumference = CIRCUMFERENCE( radius );
 	circularArea = CIRCULARAREA( radius );
 	// 원둘레 및 원면적 출력
-	printf("반지름 %.2f인 원둘레는 %.2f이고 원면적은 %.2f입니다.",
+	printf("반지름 %.2f인 원둘레는 %.2f이고 원면적은 %.2f입니다.\n",
 					radius, circumference, circularArea );
 	// (반지름+1)으로 원둘레 및 원면적 계산
 	circumference = CIRCUMFERENCE( radius + 1 );
