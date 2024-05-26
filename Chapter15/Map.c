@@ -1,6 +1,6 @@
 // C 프로그래밍 - https://codereading101.github.io/C/
 // 소스파일 - https://github.com/CodeReading101/C/blob/main/Chapter15/Map.c
-
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "CharacterMovement.h"
 #include "ReadWriteMap.h"
