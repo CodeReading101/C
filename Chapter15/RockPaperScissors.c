@@ -10,14 +10,7 @@
 #define PAPER   3
 
 // A양이 승리한 경우 확인 매크로 함수
-#define DoesPlayerAWin( playerA, playerB )
-	// A양이 가위이고 B군이 보를 낸 경우 A양 승리
-	( ( ( playerA == SCISSOR ) && ( playerB == PAPER ) )
-	// A양이 바위이고 B군이 가위를 낸 경우 A양 승리
-	|| ( ( playerA == ROCK ) && ( playerB == SCISSOR ) )
-	// A양이 보이고 B군이 바위를 낸 경우 A양 승리
-	|| ( ( playerA == PAPER ) && ( playerB == ROCK ) ) )
-	? 1 : 0
+#define DoesPlayerAWin( playerA, playerB ) ( ( ( playerA == SCISSOR ) && ( playerB == PAPER ) ) || ( ( playerA == ROCK ) && ( playerB == SCISSOR ) ) || ( ( playerA == PAPER ) && ( playerB == ROCK ) ) ) ? 1 : 0
 
 // 가위바위보 입력 함수
 int getRockPaperScissors() {
@@ -71,4 +64,3 @@ int main() {
 	// 프로그램 종료
 	return 0;
 }
-
