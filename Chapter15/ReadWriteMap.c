@@ -16,7 +16,7 @@ int readMap( char *filename ) {
 
 	// 맵 파일에서 한 줄씩 읽기
 	for( int row=0; fgets( map[row], 100, inFile ) != NULL; row++ ) {
-		if ( map[row][0] == '\n' ) {
+		if ( strlen( map[row] ) < 3 ) {
 			row--;
 		}
 	}
