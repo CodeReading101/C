@@ -1,13 +1,10 @@
 // C 프로그래밍 - https://codereading101.github.io/C/
 // 소스파일 - https://github.com/CodeReading101/C/blob/main/Chapter01/HelloWorld.c
 
-#include <stdio.h> 								
-
-// 프로그램시작 
+#include <stdio.h>
 int main() {
-	// Hello, World!를 출력 
-	printf( "Hello, World! \n" ); 	
-	// 프로그램 종료 
-	return 0; 								
+	// Hello, World!를 출력
+	printf( "Hello, World!" );
+	return 0;
 }
 
