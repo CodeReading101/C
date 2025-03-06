@@ -4,21 +4,21 @@
 #include <stdio.h>
 int main() {
 	// 주요 날씨 내용을 입력
-	printf( "오늘은 몇 월인가요: " );
-	int month = 0;
-	scanf( "%d", &month );
-	printf( "오늘은 몇 일인가요: " );
-	int day = 0;
-	scanf( "%d", &day );
-	printf( "오늘은 무슨 요일인가요: " );
-	char week[16] = "";
-	scanf( "%s", week );
 	printf( "오늘의 기상특보는 무엇인가요: " );
 	char weatherReport[16] = "";
 	scanf( "%s", weatherReport );
 	printf( "오늘의 주의사항은 무엇인가요: " );
 	char precaution[16] = "";
 	scanf( "%s", precaution );
+	printf( "오늘은 무슨 요일인가요: " );
+	char week[16] = "";
+	scanf( "%s", week );
+	printf( "오늘은 몇 월인가요: " );
+	int month = 0;
+	scanf( "%d", &month );
+	printf( "오늘은 몇 일인가요: " );
+	int day = 0;
+	scanf( "%d", &day );
 	printf( "서울 최저기온은 몇 도인가요: " );
 	int lowSeoul = 0;
 	scanf( "%d", &lowSeoul );
@@ -65,4 +65,3 @@ int main() {
 	printf( "이상 날씨였습니다." );
 	return 0;
 }
-
