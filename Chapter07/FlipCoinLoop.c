@@ -13,7 +13,7 @@ int main() {
 		int coin = rand() % 2 + 1;
 		// 사용자는 동전의 앞면과 뒤면 중 하나를 선택
 		printf( "동전의 앞면(1), 뒤면(2) 중 하나를 선택하세요: " );
-	int user = 0;
+		int user = 0;
 		scanf( "%d", &user );
 		// 사용자가 동전의 상태를 맞추었는지 결과 출력
 		( coin == user ) ? printf( "맞췄습니다\n" ) : printf( "틀렸습니다\n" );
