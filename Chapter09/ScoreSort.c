@@ -27,3 +27,4 @@ int main() {
 		printf( "%d ", scores[index] );
 	return 0;
 }
+

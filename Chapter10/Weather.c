@@ -12,15 +12,15 @@ int main() {
 	// 날씨 뉴스 기사 생성
 	printf( "일부 지방에 %s가 발효중입니다. \n", weatherReport );
 	strcpy( newsMessage, "출근길 " );
-	// 대설특보는 눈길 운전 조심을 출력
+	// 첫째, 대설특보는 눈길 운전 조심을 출력
 	if ( !strcmp( weatherReport, "대설특보" ) ) {
 		strcat( newsMessage, "눈길 " );
 	}
-	// 호우특보는 빗길 운전 조심을 출력
+	// 둘째, 호우특보는 빗길 운전 조심을 출력
 	else if ( !strcmp( weatherReport, "호우특보" ) ) {
 		strcat( newsMessage, "빗길 " );
 	}
-	// 강풍주의보는 안전 운전 조심을 출력
+	// 셋째, 강풍주의보는 안전 운전 조심을 출력
 	else if ( !strcmp( weatherReport, "강풍주의보" ) ) {
 		strcat( newsMessage, "안전 " );
 	}

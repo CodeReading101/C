@@ -19,9 +19,9 @@ int main() {
 		fl += stat[action-1][2];
 		// 캐릭터 키운 결과 출력
 		printf( "%s\n체력%2d  경험%2d  기분%2d\n\n", image[action-1], hp, xp, fl );
-		// 새로운 입력 받아서 게임 계속 진행
+		// 다음 입력 받아서 게임 계속 진행
 		printf( "잠자기(1), 노래(2), 산책(3), 먹기(4), 종료(5) 중 하나를 숫자로 입력하세요: " );
-		scanf( "%d", &action);
+		scanf( "%d", &action );
 	} while( ( action == 1 ) || ( action == 2 ) || ( action == 3 ) || ( action == 4 ) );
 	return 0;
 }
