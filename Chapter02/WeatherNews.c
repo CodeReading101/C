@@ -16,7 +16,7 @@ int main() {
 	printf( "오늘은 몇 월인가요: " );
 	int month = 0;
 	scanf( "%d", &month );
-	printf( "오늘은 몇 일인가요: " );
+	printf( "오늘은 며칠인가요: " );
 	int day = 0;
 	scanf( "%d", &day );
 	printf( "서울 최저기온은 몇 도인가요: " );
