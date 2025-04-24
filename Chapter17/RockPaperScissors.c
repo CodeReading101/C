@@ -13,9 +13,9 @@
 #define DoesPlayerAWin( playerA, playerB ) ( ( ( playerA == SCISSOR ) && ( playerB == PAPER ) ) || ( ( playerA == ROCK ) && ( playerB == SCISSOR ) ) || ( ( playerA == PAPER ) && ( playerB == ROCK ) ) ) ? TRUE : FALSE
 // 가위바위보 선택 함수
 int getRockPaperScissors() {
-	int player = 0;
 	// 사용자가 가위바위보중 하나를 선택
 	printf( "가위(1), 바위(2), 보(3) 중 하나를 숫자로 입력하세요: " );
+	int player = 0;
 	scanf( "%d", &player );
 	// 가위바위보 선택 결과를 출력
 	switch( player ) {
@@ -31,14 +31,12 @@ int getRockPaperScissors() {
 	return player;
 }
 int main() {
-	int playerA = SCISSOR;
-	int playerB = SCISSOR;
 	// A양 가위바위보 선택
 	printf( "A양, " );
-	playerA = getRockPaperScissors();
+	int playerA = getRockPaperScissors();
 	// B군 가위바위보 선택
 	printf( "B군, " );
-	playerB = getRockPaperScissors();
+	int playerB = getRockPaperScissors();
 	// 가위바위보 승패 출력
 	// 첫째 A양과 B군이 비김
 	if ( playerA == playerB )

@@ -8,9 +8,9 @@
 #define BLUE    4
 #define PURPLE  5
 int main() {
-	int color = PURPLE;
 	// 사용자에게 색깔 입력 받기
 	printf( "빨강(1), 노랑(2), 초록(3), 파랑(4), 보라(5) 중 하나를 숫자로 입력하세요: " );
+	int color = PURPLE;
 	scanf( "%d", &color );
 	// 재미로 보는 색깔 심리테스트 결과 출력
 	switch ( color ) {

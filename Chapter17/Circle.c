@@ -7,15 +7,13 @@
 #define CIRCUMFERENCE( r )  ( 2 * PI * ( r ) )
 #define CIRCULARAREA( r ) ( PI * ( r ) * ( r ) )
 int main() {
-	double radius = 0.0;
-	double length = 0.0;
-	double area = 0.0;
 	// 반지름을 입력
 	printf( "반지름을 입력하세요: " );
+	double radius = 0.0;
 	scanf( "%lf", &radius );
 	// 먼저 반지름으로 원둘레 및 원면적 계산
-	length = CIRCUMFERENCE( radius );
-	area = CIRCULARAREA( radius );
+	double length = CIRCUMFERENCE( radius );
+	double area = CIRCULARAREA( radius );
 	printf( "반지름 %.2f인 원둘레는 %.2f이고 원면적은 %.2f입니다.\n", radius, length, area );
 	// (반지름+1)으로 원둘레 및 원면적 계산
 	length = CIRCUMFERENCE( radius + 1 );
