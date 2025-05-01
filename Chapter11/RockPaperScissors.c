@@ -23,14 +23,7 @@ int getRockPaperScissors() {
 }
 // A양이 승리한 경우 확인 함수
 int DoesPlayerAWin( int playerA, int playerB ) {
-	return
-		// A양이 가위이고 B군이 보를 낸 경우
-		( ( ( playerA == 1 ) && ( playerB == 3 ) )
-			// A양이 바위이고 B군이 가위를 낸 경우
-			|| ( ( playerA == 2 ) && ( playerB == 1 ) )
-			// A양이 보이고 B군이 바위를 낸 경우
-			|| ( ( playerA == 3 ) && ( playerB == 2 ) ) )
-		? 1 : 0;
+	return ( ( ( playerA == 1 ) && ( playerB == 3 ) ) || ( ( playerA == 2 ) && ( playerB == 1 ) ) || ( ( playerA == 3 ) && ( playerB == 2 ) ) ) ? 1 : 0;
 }
 int main() {
 	// A양 가위바위보 선택
