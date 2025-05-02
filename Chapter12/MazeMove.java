@@ -41,8 +41,10 @@ int move( int row, int column ) {
 	if ( ( row < 0  ) || ( HEIGHT <= row ) || ( column < 0 ) || ( WIDTH <= column ) )
 		return 0;
 	// 먼저, 목표 지점이면 길 찾기 종료
-	else if ( map[row][column] == SUCCESS )
+	else if ( map[row][column] == SUCCESS ) {
+		printMap( row, column );
 		return SUCCESS;
+	}
 	// 아직 지나가지 않은 길이면 지나간 흔적을 남기기
 	else if ( map[row][column] == NOTVISITED ) {
 		map[row][column] = VISITED;
