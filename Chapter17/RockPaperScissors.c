@@ -10,7 +10,14 @@
 #define ROCK    2
 #define PAPER   3
 // A양이 승리한 경우 확인 함수
-#define DoesPlayerAWin( playerA, playerB ) ( ( ( playerA == SCISSOR ) && ( playerB == PAPER ) ) || ( ( playerA == ROCK ) && ( playerB == SCISSOR ) ) || ( ( playerA == PAPER ) && ( playerB == ROCK ) ) ) ? TRUE : FALSE
+#define DoesPlayerAWin( playerA, playerB )
+	// A양이 가위이고 B군이 보를 낸 경우
+	( ( ( playerA == SCISSOR ) && ( playerB == PAPER ) )
+		// A양이 바위이고 B군이 가위를 낸 경우
+		|| ( ( playerA == ROCK ) && ( playerB == SCISSOR ) )
+		// A양이 보이고 B군이 바위를 낸 경우
+		|| ( ( playerA == PAPER ) && ( playerB == ROCK ) ) )
+	? TRUE : FALSE
 // 가위바위보 선택 함수
 int getRockPaperScissors() {
 	// 사용자가 가위바위보중 하나를 선택

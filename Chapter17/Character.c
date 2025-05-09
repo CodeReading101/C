@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include "Character.h"
 #include "Map.h"
-extern int map[100][100];
-extern int width, height;
 #define WALL 1
 #define EXIT 3
 // 맵 이동 함수

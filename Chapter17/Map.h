@@ -4,11 +4,11 @@
 #ifndef _MAP_H_
 #define _MAP_H_
 
-#define FALSE 0
 #define TRUE  1
+#define FALSE 0
 
-int map[100][100];
-int width, height;
+extern int map[100][100];
+extern int width, height;
 
 int readMap(char* filename);
 void writeMap();
