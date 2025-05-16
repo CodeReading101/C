@@ -9,7 +9,7 @@
 int main() {
 	// 먼저 파일에서 맵을 읽고 출력
 	printf( "파일이름을 입력하세요: " );
-	char filename[100]="";
+	char filename[1024] = "";
 	scanf( "%s", filename );
 	if ( readMap( filename ) == FALSE )
 		return FALSE;
