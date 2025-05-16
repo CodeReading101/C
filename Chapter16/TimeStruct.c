@@ -10,9 +10,9 @@ typedef struct {
 } Time;
 // 전체 초를 입력받는 함수
 int getTotalSeconds() {
-	int totalSeconds = 0;
 	// 사용자에게 전체 초를 입력받기
 	printf( "초를 입력하세요: " );
+	int totalSeconds = 0;
 	scanf( "%d", &totalSeconds );
 	return totalSeconds;
 }
@@ -28,12 +28,10 @@ Time calculateTime( int totalSeconds ) {
 	return time;
 }
 int main() {
-	int totalSeconds = 0;
-	Time time = { 0, 0, 0 };
 	// 전체 초를 입력받기
-	totalSeconds = getTotalSeconds();
+	int totalSeconds = getTotalSeconds();
 	// 시, 분, 초를 계산
-	time = calculateTime( totalSeconds );
+	Time time = calculateTime( totalSeconds );
 	// 시, 분, 초를 출력
 	printf( "%d초는 %d시간 %d분 %d초입니다", totalSeconds, time.hours, time.minutes, time.seconds );
 	return 0;
