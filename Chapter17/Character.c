@@ -4,10 +4,8 @@
 #include <stdio.h>
 #include "Character.h"
 #include "Map.h"
-
 #define WALL 1
 #define EXIT 3
-
 // 맵 이동 함수
 void move( char direction, int *row, int *column ) {
 	// W는 위로 한칸 이동

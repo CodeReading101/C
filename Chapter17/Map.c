@@ -1,7 +1,7 @@
 // C 프로그래밍 - https://codereading101.github.io/C/
 // 소스파일 - https://github.com/CodeReading101/C/blob/main/Chapter17/Map.c
 
-//#define  _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 #include "Map.h"
@@ -39,7 +39,7 @@ int readMap( char *filename ) {
 void writeMap() {
 	// 길, 벽, 옷, 문 등 출력값 설정
 	char symbol[10][1024] = { "  ", "\033[44m  \033[0m", "옷", "\033[34m문\033[0m", "\033[31m♥\033[0m", "\033[33m★\033[0m", "\033[32m♣\033[0m", "\033[31m♠\033[0m", "\033[36m◆\033[0m", "\033[35m■\033[0m" };
-	printf("\033[2K\033[2;1f");
+	printf("\033[2K\033[1;1f");
 	// 2차원 미로 맵을 한 칸씩 출력
 	for ( int row = 0; row < height; row++ ) {
 		for ( int column = 0; column < width; column++ )

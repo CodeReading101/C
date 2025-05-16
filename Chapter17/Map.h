@@ -10,7 +10,7 @@
 extern int map[100][100];
 extern int width, height;
 
-int readMap(char* filename);
+int readMap( char* filename );
 void writeMap();
 
 #endif
