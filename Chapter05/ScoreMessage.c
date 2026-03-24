@@ -1,6 +1,6 @@
 // C 프로그래밍 - https://codereading101.github.io/C/
 // 소스파일 - https://github.com/CodeReading101/C/blob/main/Chapter05/ScoreMessage.c
-
+ 
 #include <stdio.h>
 int main() {
 	// 사용자에게 점수 입력받기
