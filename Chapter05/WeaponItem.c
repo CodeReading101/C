@@ -28,7 +28,7 @@ int main() {
 			break;
 		// D는 오른쪽으로 이동
 		case 'd': case 'D':
-			printf( "\033[2J\033[4;15fSUCCESS!\033[7;15f" );
+			printf( "\033[2;9f 옷D\033[7;15f" );
 	}
 	return 0;
 }
