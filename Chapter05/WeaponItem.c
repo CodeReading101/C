@@ -3,30 +3,30 @@
 
 #include <stdio.h>
 int main() {
-	// 먼저, 캐릭터의 초기 위치를 출력
+	// 캐릭터를 중심으로 상하좌우에 놓인 아이템을 출력
 	printf( "      / \n" );
 	printf( " [   옷   D\n" );
 	printf( "      -> \n\n" );
-	// 이동 방향 입력 받기
+	// 캐릭터의 이동 방향 WASD 입력 받기
 	printf( "방향키(WASD)와[Enter]를 입력하세요: " );
 	char direction = '\0';
 	scanf( "%c", &direction);
-	// WASD 입력에 따른 이동 결과 출력
+	// 입력에 따른 이동 결과 출력
 	printf( "\033[2;6f  " );
 	switch( direction ) {
-		// W는 위로 이동
+		// W는 위로 이동해서 칼을 획득
 		case 'w': case 'W':
 			printf( "\033[1;6f 옷/\033[7;15f" );
 			break;
-		// A는 왼쪽으로 이동
+		// A는 왼쪽으로 이동해서 방패를 획득
 		case 'a': case 'A':
 			printf( "\033[2;1f 옷]\033[7;15f" );
 			break;
-		// S는 아래로 이동
+		// S는 아래로 이동해서 창을 획득
 		case 's': case 'S':
 			printf( "\033[3;6f 옷->\033[7;15f" );
 			break;
-		// D는 오른쪽으로 이동
+		// D는 오른쪽으로 이동해서 활을 획득
 		case 'd': case 'D':
 			printf( "\033[2;9f 옷D\033[7;15f" );
 	}
